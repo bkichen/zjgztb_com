@@ -1,0 +1,53 @@
+/**
+ *	飘窗和浮动广告
+ *	v1.0.1
+ *	author: zhangzj;
+ **/
+
+
+.main {
+    margin: 0 auto;
+    width: 998px;
+    height: 99999px;
+    background-color: #f1f1f1;
+}
+
+.move-list {
+    list-style-type: none;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/close.png) no-repeat;
+}
+.move-item {
+	z-index:120;
+	overflow:hidden;
+}
+
+.pl {
+    position: fixed;
+    left: 15px;
+}
+
+.pr {
+    position: fixed;
+    right: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.float-img {
+	z-index: 1001;
+	position: absolute;
+	left: 2px;
+	top: 43px;
+	overflow:hidden;
+}

@@ -1,0 +1,233 @@
+/**!
+ * 乌鲁木齐市公共资源交易网--日程安排
+ * author: lucw;
+ * date:2019-08-20
+ */
+
+.ewb-plan {
+    border: 1px solid #e2e2e2;
+}
+
+.ewb-plan-l{
+    float: left;
+    margin-left: 20px;
+    width: 770px;
+}
+
+.ewb-plan-r{
+    float: right;
+    width: 345px;
+    margin-right: 20px;
+    padding-bottom: 40px;
+}
+
+.ewb-mt20{
+    margin-top: 20px;
+}
+
+.hack-colu{
+    padding-top: 20px;
+}
+
+.ewb-bid-hd{
+    padding-top: 6px;
+    padding-left: 2px;
+    height: 58px;
+    line-height: 58px;
+    color: #ee4a4d;
+}
+
+.ewb-colu-hd{
+    margin-right: 20px;
+}
+
+.ewb-colu-bd{
+    border: 0;
+}
+
+/* table */
+
+.ewb-use-table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.ewb-use-thr{
+    height: 37px;
+    background-color: #d5e9ff;
+}
+
+.ewb-use-thr th{
+    color: #2159ba;
+    text-align: center;
+}
+
+.ewb-use-tbody tr{
+    height: 35px;
+    cursor: pointer;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.ewb-use-tbody td{
+    text-align: center;
+    word-break: break-all;
+    border-left: 1px solid #c9c9c9;
+}
+
+.ewb-use-thr.no-hei{
+    height: 0;
+}
+
+.use-table-head{
+    margin-right: 19px;
+    height: 37px;
+    border-left: 1px solid #d5e9ff;
+    background-color: #d5e9ff;
+}
+
+.ewb-use-thr .th01{
+    width: 235px;
+}
+
+.ewb-use-thr .th02{
+    width: 514px;
+}
+
+.hack-len{
+    padding-left: 10px;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+}
+
+.ewb-let-items{
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.ewb-let-items>li{
+    line-height: 24px;
+}
+
+.use-tablecon{
+    padding-right: 20px;
+    padding-left: 1px;
+    height: 347px;
+}
+
+.ewb-use-tbody tr{
+    border-right: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+/* flow */
+.ewb-flow-hd{
+    margin-top: 20px;
+    height: 103px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0d6ecd;
+    border-radius: 4px;
+    background-color: #e5f1ff;
+    overflow: hidden;
+}
+
+.flow-time{
+    padding-top: 15px;
+}
+
+.ewb-make{
+    padding-top: 48px;
+    padding-bottom: 9px;
+    text-align: center;
+}
+
+.make-sel{
+    margin: 0 5px;
+    padding-left: 11px;
+    width: 91px;    
+    height: 25px;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+}
+
+.ewb-make .chosen-container-single .chosen-single div b {
+    background-image: url('../images/choose-down.png');
+}
+
+.ewb-make .chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-image: url('../images/choose-up.png');
+}
+
+.ewb-make .chosen-container-single .chosen-single{
+    color: #333;
+}
+
+.ewb-make .chosen-container-single .chosen-single{
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+}
+
+.ewb-make .chosen-container-active.chosen-with-drop .chosen-single{
+    border: 1px solid #cfcfcf;
+}
+
+.ewb-make .chosen-container .chosen-drop{
+    border: 1px solid #cfcfcf;
+    border-top: 0;
+}
+
+.ewb-make .chosen-container{
+    margin: 0 5px;
+}
+
+/* 日期选择 */
+.date-init{
+    
+}
+
+.ewb-flow .laydate-theme-molv .layui-laydate-main{
+    width: 568px;
+    height: 300px;
+}
+
+.ewb-flow .layui-laydate-content td, 
+.ewb-flow .layui-laydate-content th{
+    width: 86px;
+    height: 37px;
+}
+
+.ewb-flow #layui-laydate1 .layui-laydate-content table .layui-this{
+    background: url('../images/today_ico.png') center no-repeat;
+    background-color: #fff !important;
+}
+
+.ewb-flow .laydate-day-mark{
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    background: url('../images/date_imp.png') center no-repeat;
+}
+
+.ewb-flow .laydate-day-mark::after{
+    display: none;
+}
+
+.ewb-flow .laydate-theme-molv .layui-laydate-content{
+    
+    border-top: 0;
+}
+
+.ewb-flow .layui-laydate, .layui-laydate-hint{
+    box-shadow: none;
+}
+
+
+.ewb-flow #layui-laydate1 .layui-laydate-content ul .layui-this{
+    background: none;
+    background-color: #0d6ecd !important;
+}

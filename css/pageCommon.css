@@ -1,0 +1,46 @@
+/**!
+ * 江苏省公共资源交易网
+ * author: wuzhou;
+ */
+
+.ewb-page-footer {
+    background-color: #265fae;
+}
+
+.ewb-page-footer .ewb-footer-txt {
+    color: #fff;
+}
+
+.ewb-page-wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 面包屑 */
+
+.ewb-bread {
+    height: 54px;
+    line-height: 54px;
+    text-indent: 40px;
+    font-size: 14px;
+    color: #999;
+    background: url(../images/bread_ico.png) 20px 50% no-repeat;
+}
+
+.ewb-bread>a {
+    color: #999;
+}
+
+.ewb-bread>span>a {
+    color: #999;
+}
+
+.ewb-bread>a:hover,
+.ewb-bread>a:last-child {
+    color: #f60;
+}
+
+.ewb-page-main {
+    background-color: #fff;
+}

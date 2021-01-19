@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><script type="text/javascript" src="/js/kb.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+	﻿﻿<link rel="stylesheet" href="../fzx/js/lib/chosen/chosen.css">
+	<link rel="stylesheet" href="../css/Common.css">
+    <link rel="stylesheet" href="../css/subcommon.css">
+    <link rel="stylesheet" href="../css/pageCommon.css">
+    <link rel="stylesheet" href="../css/mainInfo.css"> 
+    <link rel="stylesheet" type="text/css" href="../js/lib/pagination/mricode.pagination.css">
+    
+    <script src="../fzx/js/lib/jquery.min.js"></script>
+	<script src="../js/ServiceUtil.js"></script>
+    <script src="../js/lib/pagination/mricode.pagination.js"></script>
+    <title>张家港市公共资源交易信息网-江苏信息网</title>
+	<script type="text/javascript" src="../js/webBuilderCommon.js"></script>
+    <script type="text/javascript" src="../js/pageView.js"></script>
+
+   <link rel="stylesheet" href="../css/webBuilderCommonGray.css"></head>
+
+<body>
+    <!-- head begin -->
+    <div id="header"></div> 
+    <!-- head finish -->
+    <!-- 中间部分 -->
+    <div class="ewb-trade-mid">
+        <div class="ewb-page-wrap">
+            <div class="ewb-bread"><a href="../index.html">首页</a>&nbsp;&gt; <span style="color:#ff5500" id="viewGuid" value="cms_004">主体信息</span>
+					<div style="display:none"><input type="hiden" id="catenum" value="004"></div></div><div class="ewb-page-main ewb-h708">
+                <div class="sub-container clearfix">
+                    <div class="clearfix ewb-mt20">
+                        <div class="ewb-span6">
+                            <div class="ewb-trade-left">
+                                <div class="ewb-trade-tt">
+                                    主体信息
+                                </div>
+                                <div>
+                                    <ul id="secondcategory" class="wb-tree">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ewb-span18 r">
+                            <div class="ewb-ml10">
+                                <div class="ewb-area-tt"> 
+                                   <div class="ewb-trade-search clearfix" id="zbdl">
+                                        <div class="l ewb-stxt">
+                                            单位名称：
+                                        </div>
+										<div class="l ewb-input-frame clearfix">
+											<input id="danweiname" type="text" class="ewb-trade-input l" style="width:220px"> 
+										</div>
+                                        <div class="l ewb-stxt ewb-ml15">
+                                            代理资质：
+                                        </div>
+										<div class="l ewb-input-frame clearfix">
+										  <select id="dlzz" class="ewb-trade-input ewb-w168 l" style="width:220px">
+										     <option value="" selected="">全部</option>
+											 <option value="甲级">甲级</option>
+											 <option value="乙级">乙级</option>
+											 <option value="暂定级">暂定级</option>
+										  </select> 
+										</div> 
+                                        <button onclick="onClickSelect('', '0')" class="ewb-sbtn r" type="button"></button>
+                                    </div>
+								<div class="ewb-trade-search clearfix" id="tbxx">
+                                        <div class="l ewb-stxt">
+                                            单位名称：
+                                        </div>
+										<div class="l ewb-input-frame clearfix">
+											<input id="danweiname2" type="text" class="ewb-trade-input l" style="width:220px"> 
+										</div>
+                                        
+                                        <button onclick="onClickSelect('', '0')" class="ewb-sbtn r" type="button"></button>
+                                    </div>
+									<div class="ewb-trade-search clearfix" id="cyry"> 
+									  <ul>
+									   <li class="clearfix">
+                                        
+                                        <div class="l ewb-stxt">
+                                            所属企业：
+                                        </div>
+										<div class="l ewb-input-frame clearfix">
+											<input id="danweiname3" type="text" class="ewb-trade-input l" style="width:220px"> 
+										</div> 
+										<div class="l ewb-stxt">
+                                            姓名：
+                                        </div>
+										<div class="l ewb-input-frame clearfix">
+											<input id="dailipeo" type="text" class="ewb-trade-input l" style="width:220px"> 
+										</div>
+									  </li>
+									  <li class="clearfix">
+										
+                                          <div class="l ewb-stxt">
+                                            执业资格：
+                                        </div>
+										<div class="l ewb-input-frame clearfix">
+											<input id="zyzg" type="text" class="ewb-trade-input l" style="width:220px"> 
+										</div>
+                                        <button onclick="onClickSelect('', '0')" class="ewb-sbtn  r" type="button"></button>
+									 </li>
+									 </ul>
+                                    </div>
+									<div class="ewb-trade-search clearfix" id="zyry">
+									 <ul>
+									   <li class="clearfix">
+                                        
+                                        <div class="l ewb-stxt">
+                                            所属企业：
+                                        </div>
+										<div class="l ewb-input-frame clearfix">
+											<input id="danweiname4" type="text" class="ewb-trade-input l" style="width:220px"> 
+										</div>
+										<div class="l ewb-stxt">
+                                            姓名：
+                                        </div>
+										<div class="l ewb-input-frame clearfix">
+											<input id="renyuanname" type="text" class="ewb-trade-input l" style="width:220px"> 
+										</div>
+									  </li>
+									  <li>
+                                          <div class="l ewb-stxt">
+                                            专业等级：
+                                        </div>
+										<div class="l ewb-input-frame clearfix">
+											<input id="level" type="text" class="ewb-trade-input l" style="width:220px"> 
+										</div>
+                                        <button onclick="onClickSelect('', '0')" class="ewb-sbtn r" type="button"></button>
+									</li>
+									</ul>
+                                    </div>
+									</div>
+								  <div id="infoList">
+                                  </div>
+							<div id="page" class="ewb-page"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- foot begin -->
+    <div id="footer"></div> 
+    <!-- foot finish -->
+	 <script type="text/template" id="info-template-001">
+	 <ul class="zbdl-mp-ul">
+        {{#info}} 
+        <li>
+		  <div  class="zbdl-mp">
+		  <div class="zbdl-mp-name"> <a target="_blank" href="{{detailurl}}">{{danweiname}}</a></div>
+		  <table border="0" cellpadding="0" cellspacing="0">
+           <tbody> 
+            <tr>
+                <td rowspan="4" class="zbdl-mp-kb">{{lianxiren}}</td>
+                <td style="height: 20px"></td>
+            </tr>
+            <tr>
+                <td class="zbdl-mp-zz">代理资质：</td>
+				<td class="zbdl-mp-zz2">{{zizhilevel}}</td>
+            </tr>
+            <tr>
+                <td class="zbdl-mp-zz">所属地区：</td>
+				<td class="zbdl-mp-zz2">{{xiaquname}}</td>
+            </tr>
+            <tr>
+                <td class="zbdl-mp-xx">详细地址：</td>
+                <td class="zbdl-mp-xx2">{{address}}</td>
+            </tr>
+            </tbody>
+		 </table>
+		 </div>
+		</li>		
+        {{/info}} 
+		</ul>
+    </script> 
+	 <script type="text/template" id="info-template-002">
+	                   <table class="ewb-trade-tb">
+                                    <thead>
+                                        <tr>
+                                            <th class="ewb-trade-th ewb-w44">
+                                                序号
+                                            </th>
+                                            <th class="ewb-trade-th ewb-w1">
+                                                单位名称
+                                            </th>
+                                            <th class="ewb-trade-th ewb-w3">
+                                                营业执照
+                                            </th>
+                                            <th class="ewb-trade-th  ewb-w4">
+                                                诚信承诺书
+                                            </th>
+											 <th class="ewb-trade-th  ewb-w4">
+                                                详细信息
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                {{#info}} 
+                                <tr class="ewb-trade-tr">
+                                            <td class="ewb-trade-td">
+                                                {{index}}
+                                            </td>
+                                            <td class="ewb-trade-td">
+                                                <a>
+                                                   {{danweiname}}
+                                                </a>
+                                            </td>
+                                            <td class="ewb-trade-td ">
+                                                {{licencenum}}
+                                            </td>
+                                            <td class="ewb-trade-td">
+                                                <a href="{{chengnuoshuurl}}" target=_blank>点击查看</a>
+                                            </td>
+											 <td class="ewb-trade-td">
+                                                <a href="{{detailurl}}" target=_blank>点击查看</a>
+                                            </td>
+                                        </tr>
+
+        {{/info}} 
+                                    </tbody>
+                                </table>  
+    </script> 
+	
+	 <script type="text/template" id="info-template-003">
+	                   <table class="ewb-trade-tb">
+                                    <thead>
+                                        <tr>
+                                            <th class="ewb-trade-th ewb-w44">
+                                                姓名
+                                            </th>
+                                            <th class="ewb-trade-th ewb-w3">
+                                                执业资格
+                                            </th>
+                                            <th class="ewb-trade-th ewb-w1">
+                                                所属企业
+                                            </th> 
+											 <th class="ewb-trade-th  ewb-w4">
+                                                详细信息
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                {{#info}} 
+                                <tr class="ewb-trade-tr">
+                                            <td class="ewb-trade-td">
+                                                {{dailipeople}}
+                                            </td>
+                                            <td class="ewb-trade-td">
+                                                <a>
+                                                   {{zhiyezige}}
+                                                </a>
+                                            </td>
+                                            <td class="ewb-trade-td ">
+                                                <a> {{danweiname}} </a>
+                                            </td>
+											 <td class="ewb-trade-td">
+                                                <a href="{{detailurl}}" target=_blank>点击查看</a>
+                                            </td>
+                                        </tr>
+
+        {{/info}} 
+                                    </tbody>
+                                </table>  
+    </script> 
+	
+	 <script type="text/template" id="info-template-004">
+	                   <table class="ewb-trade-tb">
+                                    <thead>
+                                        <tr>
+                                            <th class="ewb-trade-th ewb-w44">
+                                                姓名
+                                            </th>
+                                            <th class="ewb-trade-th ewb-w3">
+                                                证号
+                                            </th>
+											<th class="ewb-trade-th ewb-w3">
+											  专业等级
+											</th>
+                                            <th class="ewb-trade-th ewb-w1">
+                                                所属企业
+                                            </th> 
+											 <th class="ewb-trade-th  ewb-w4">
+                                                详细信息
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                {{#info}} 
+                                <tr class="ewb-trade-tr">
+                                            <td class="ewb-trade-td">
+                                                {{renyuanname}}
+                                            </td>
+                                            <td class="ewb-trade-td"> 
+                                                   {{zhengshuno}} 
+                                            </td>
+											<td class="ewb-trade-td">
+                                                <a>
+                                                   {{level}}
+                                                </a>
+                                            </td>
+                                            <td class="ewb-trade-td ">
+                                                <a> {{danweiname}} </a>
+                                            </td>
+											 <td class="ewb-trade-td">
+                                                <a href="{{detailurl}}" target=_blank>点击查看</a>
+                                            </td>
+                                        </tr>
+
+        {{/info}} 
+                                    </tbody>
+                                </table>  
+    </script> 
+	
+	<script src="../search/js/mustache.js"></script> 
+    <script src="../fzx/js/lib/chosen/chosen.min.js"></script>
+    <script src="../fzx/js/lib/laydate/laydate.js"></script>
+    <script src="../fzx/js/lib/placeholder.min.js"></script>
+    <script src="../js/common.js"></script>
+	<script src="../js/tradeInfo.js"></script> 
+	<script src="../js/mainInfo.js"></script>  
+</body>
+
+</html>

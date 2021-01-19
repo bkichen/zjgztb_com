@@ -1,0 +1,153 @@
+
+
+/**!
+ * 首页
+ * author: gaojian;
+ * date: 2019-07-01
+ */
+ 
+/* main */
+body {
+    background: #f2f2f2;
+}
+
+.ewb-category {
+    display: none;
+}
+
+.ewb-nav-list {
+    margin-left: 0;
+    width: 100%;
+}
+
+.ewb-nav-node {
+    margin-left: 70px;
+}
+
+.ewb-loc {
+    height: 46px;
+    line-height: 46px;
+    padding-left: 15px;
+    font-size: 0;
+    -webkit-text-size-adjust: none;
+    background: url('../images/loc_icon.png') 0 center no-repeat;
+}
+
+.ewb-loc span {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.ewb-loc a {
+    font-size: 14px;
+    color: #333;
+}
+
+.ewb-loc .cur {
+    color: #ff7200;
+}
+
+.ewb-main {
+    height: 715px;
+    margin-bottom: 20px;
+    background: url('../images/main_bg1.jpg') no-repeat;
+}
+
+.ewb-main-title {
+    height: 94px;
+    line-height: 94px;
+    text-align: center;
+    font-size: 28px;
+    color: #1c68cb;
+}
+
+.ewb-button {
+    padding: 17px 45px 0;
+}
+
+.ewb-button-list {
+    width: 33.3333%;
+    margin-bottom: 50px;
+}
+
+.ewb-button-list a {
+    display: block;
+    height: 210px;
+    padding-top: 20px;
+    margin: 0 35px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.ewb-button-list a:hover {
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ewb-button-img {
+    display: block;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.ewb-button-name {
+    display: block;
+    height: 80px;
+    text-align: center;
+    font-size: 0;
+    -webkit-text-size-adjust: none;
+}
+
+.ewb-button-name>span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 24px;
+    font-size: 16px;
+    color: #333;
+}
+
+.ewb-button-name>i {
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.ewb-button-list .btn1 {
+    border-color: #4e9ae6;
+}
+
+.ewb-button-list .btn2 {
+    border-color: #f1c660;
+}
+
+.ewb-button-list .btn3 {
+    border-color: #71d6d0;
+}
+
+.ewb-button-list .btn4 {
+    border-color: #f89d9d;
+}
+
+.ewb-button-list .btn5 {
+    border-color: #c392d5;
+}
+
+.ewb-button-list .btn6 {
+    border-color: #82d38d;
+}
+
+.ewb-main.two {
+    height: 1283px;
+    background: url('../images/main_bg2.jpg')
+}
+
+.ewb-main.three {
+    height: 476px;
+    background: url('../images/main_bg3.jpg')
+}
+.sub-container{
+	/*width: 998px;*/
+    margin: 0 auto;
+}
+}

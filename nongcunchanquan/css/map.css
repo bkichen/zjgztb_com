@@ -1,0 +1,135 @@
+/**!
+ * 地图
+ * author: fxyue;
+ * date: 2020-04-10
+ */
+
+body {
+    height: 1134px;
+    background: url('../images/map_bg.jpg') center top no-repeat;
+}
+
+.ewb-title {
+    height: 91px;
+}
+
+.ewb-title img {
+    display: block;
+    margin: 0 auto;
+}
+
+.ewb-main {
+    margin: 85px 0 0 130px;
+    width: 823px;
+    height: 745px;
+    padding-left: 186px;
+    position: relative;
+    background: url("../images/map_main_bg.png") no-repeat;
+}
+
+.ewb-main-tt {
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    width: 112px;
+    height: 112px;
+}
+
+.ewb-main-tt>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: rotateCircle 10s linear infinite;
+    -webkit-animation: rotateCircle 10s linear infinite;
+    -ms-animation: rotateCircle 10s linear infinite;
+}
+
+.ewb-main-tt span {
+    position: relative;
+    font-size: 20px;
+    line-height: 109px;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+.ewb-map {
+    position: relative;
+    width: 760px;
+    height: 745px;
+}
+
+.ewb-area-name {
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    width: 81px;
+    height: 51px;
+    line-height: 32px;
+    text-align: center;
+    background: url("../images/area_name_bg.png") no-repeat;
+}
+
+.ewb-area-name.cur {
+    animation: shake-vertical 2s infinite alternate;
+    -webkit-animation: shake-vertical 2s infinite alternate;
+    -ms-animation: shake-vertical 2s infinite alternate;
+}
+
+#zjg {
+    top: 55px;
+    left: 321px;
+}
+
+#cs {
+    left: 410px;
+    top: 162px;
+}
+
+#tc {
+    left: 574px;
+    top: 222px;
+}
+
+#ks {
+    left: 507px;
+    top: 344px;
+}
+
+#gyyq {
+    left: 396px;
+    top: 337px;
+}
+
+#sz {
+    left: 251px;
+    top: 346px;
+}
+
+#wj {
+    left: 347px;
+    top: 483px;
+}
+/* 旋转360° */
+@keyframes rotateCircle {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 上下浮动 */
+@keyframes shake-vertical {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

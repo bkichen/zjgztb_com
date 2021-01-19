@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><script type="text/javascript" src="/js/kb.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <meta name="SiteName" content="网站名称">
+    <meta name="SiteDomain" content="网站域名">
+    <meta name="SiteIDCode" content="政府网站标识码">
+    <meta name="Description" content="描述">
+    <meta name="Keywords" content="关键词">
+    <title>张家港市公共资源交易信息网-江苏信息网---太仓分中心</title>
+    <!-- 页面样式 -->
+    <link rel="stylesheet" href="../../fzx/js/lib/chosen/chosen.css">
+    <link rel="stylesheet" href="../../fzx/css/common.css">
+    <link rel="stylesheet" href="../../fzx/css/public.css">
+    <link rel="stylesheet" href="../../fzx/css/tradeInfo.css">
+    <link rel="stylesheet" type="text/css" href="../../js/lib/pagination/mricode.pagination.css">
+    <!-- jquery -->
+    <script src="../../fzx/js/lib/jquery.min.js"></script>
+	<script src="../../js/ServiceUtil.js"></script>
+    <script src="../../js/lib/pagination/mricode.pagination.js"></script>
+	<script type="text/javascript" src="../../js/webBuilderCommon.js"></script>
+    <script type="text/javascript" src="../../js/pageView.js"></script>
+
+   <link rel="stylesheet" href="../../css/webBuilderCommonGray.css"></head>
+
+<body>
+    <!-- header -->
+    <div id="header"> 
+	</div>
+    <div class="ewb-nav2">
+        <div class="ewb-container clearfix">
+            <div class="ewb-nav2-left">太仓分中心</div>
+            <div class="ewb-nav2-right" id="menu_tc"> 
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="ewb-container">
+        <!-- 面包屑 -->
+        <div class="ewb-loc">
+            <span>当前位置：</span>
+			  <a href="../../index.html">首页</a> <span class="ewb-loc-span">&gt;</span><a href="../tcCity.html">太仓市分中心</a> <span class="ewb-loc-span">&gt;</span><span class="cur" id="viewGuid" value="cms_033006">交易信息</span>
+					<input type="hiden" id="catenum" value="033006"></div>
+        <div class="ewb-middle">
+		     <!-- 动态部分 -->
+            <div class="ewb-page-main ewb-h698">
+                <div class="sub-container clearfix">
+                    <div class="clearfix ewb-mt20">
+                        <!-- 左侧栏目列表 -->
+                        <div class="ewb-span6">
+                            <div class="ewb-trade-left">
+                                <div class="ewb-trade-tt">
+                                   交易信息</div>
+                                <div>
+                                    <ul id="secondcategory" class="wb-tree">  
+									
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 左侧栏目列表结束 -->
+                        <!-- 右侧信息部分 -->
+                        <div class="ewb-span18 r">
+                            <div class="ewb-ml10"> 
+							   <div class="ewb-area-tt">
+                                   <div class="ewb-trade-search clearfix">
+									 <div id="jsgc">
+									   <ul>
+									     <li class="clearfix">
+                                            <span class="ewb-stxt l">
+                                                项目名称：
+                                            </span>
+                                            <input type="text" class="ewb-trade-input l" id="titletxt" style="width:220px">
+											 <span class="ewb-stxt ewb-trade-pad l">
+                                                  所属区域：
+                                            </span>
+                                             <select id="xiaqutxt" class="ewb-trade-input l" style="width:220px"> 
+											</select>
+											
+										  </li>
+										  <li class="clearfix" style="display: none;">
+                                            <span class="ewb-stxt l">
+                                                资审类型：
+                                            </span>
+                                            <select id="zslxtxt" class="ewb-trade-input l" style="width:220px"> 
+											</select>
+											 <span class="ewb-stxt ewb-trade-pad l">
+                                                招标类型：
+                                             </span>
+                                            <select id="zblxtxt" class="ewb-trade-input l" style="width:220px"> 
+											</select>  
+										  </li> 
+										   <li class="clearfix">
+                                            <span class="ewb-stxt l">
+                                                发布时间：
+                                            </span>
+                                            <input type="text" class="ewb-trade-input ewb-time-input l" id="infodatefrom" style="width:220px">  
+											<span class="ewb-stxt l">&nbsp;到&nbsp;</span> 
+                                            <input type="text" class="ewb-trade-input ewb-time-input l" id="infodateto" style="width:220px"> 
+											 <button class="ewb-sbtn r" type="button" onclick="search2('')" text="搜  索">搜  索</button>
+										  </li>
+									   </ul>  
+                                       
+									</div>
+									<div id="nojsgc">
+									     <ul>
+									      <li class="clearfix">
+                                            <span class="ewb-stxt l">
+                                                项目名称：
+                                            </span>
+                                            <input type="text" class="ewb-trade-input l" id="titletxt2" style="width:220px">
+                                            <span class="ewb-stxt ewb-trade-pad l">
+                                                所属区域：
+                                            </span>
+                                            <select id="xiaqutxt2" class="ewb-trade-input l" style="width:220px"> 
+											</select>											
+										  </li>
+										   <li class="clearfix">
+                                            <span class="ewb-stxt l">
+                                                发布时间：
+                                            </span>
+                                            <input type="text" class="ewb-trade-input ewb-time-input l" id="infodatefrom2" style="width:220px">  
+											<span class="ewb-stxt l">&nbsp;到&nbsp;</span> 
+                                            <input type="text" class="ewb-trade-input ewb-time-input l" id="infodateto2" style="width:220px"> 
+											<button class="ewb-sbtn r" type="button" onclick="search2('')" text="搜  索">搜  索</button>
+										  </li>
+										  </ul>
+										  
+									</div>
+                                    </div>
+								</div> 
+								  <table class="ewb-trade-tb">
+                                    <thead>
+                                        <tr id="headdepart">
+                                            <th class="ewb-trade-th ewb-w44">
+                                                序号
+                                            </th>
+                                            
+                                            <!--<th class="ewb-trade-th ewb-w44 ewb-ycf2" style="width:150px">
+                                                交易分类
+                                            </th>-->
+											
+                                            <th class="ewb-trade-th ewb-trade-pro" id="xmmc-style">
+                                                项目名称
+                                            </th>
+                                            <th class="ewb-trade-th ewb-w108">
+                                                所在地区
+                                            </th>
+                                            <th class="ewb-trade-th ewb-w108">
+                                                发布时间
+                                            </th>
+                                        </tr>
+                                    </thead>  
+                                    <tbody id="xxList">
+                                       
+                                    </tbody>
+                                </table>
+								<div id="pager" class="ewb-page" style="margin-top: 20px;"></div>
+                                </div> 
+						    </div>
+                        </div>
+                        <!-- 右侧信息部分结束 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- footer -->
+    <div id="footer" class="ewb-mt20"></div>
+    <!-- 页面脚本 -->
+	 <script type="text/template" id="info-template">
+	 
+        {{#Table}} 
+                                    <tr class="ewb-trade-tr">
+                                            <td class="ewb-trade-td">
+												{{index}}
+                                            </td> 
+											<!--<td class="ewb-trade-td ewb-ycf3" title="{{jyfl}}" style="color: #5cc5fb;">
+                                                {{jyfl}}
+                                            </td>-->
+                                            <td class="ewb-trade-td">
+                                                <a href="/jump.html?infoguid={{infoid}}&categorynum={{categorynum}}&fzxname=tcCity" target="_blank" title="{{title1}}">{{{title}}}</a>
+                                            </td>
+                                            <td class="ewb-trade-td">
+                                                {{city}}
+                                            </td>
+                                            <td class="ewb-trade-td">
+                                                {{postdate}}
+                                            </td>
+                                        </tr>   
+        {{/Table}}  
+    </script> 
+	<script src="../../search/js/mustache.js"></script> 
+    <script src="../../fzx/js/lib/chosen/chosen.min.js"></script>
+    <script src="../../fzx/js/lib/laydate/laydate.js"></script>
+    <script src="../../fzx/js/lib/placeholder.min.js"></script>
+    <script src="../../fzx/js/common.js"></script>
+    <script src="../../fzx/js/lib/jquery.SuperSlide.js"></script>
+    <script src="../../fzx/js/tradeInfo.js"></script>
+	<script src="../../fzx/js/tradelist.js"></script>
+</body>
+
+</html>

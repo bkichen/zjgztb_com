@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><script type="text/javascript" src="/js/kb.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/common.css">
+    <link href="js/pagination/mricode.pagination.css" rel="stylesheet">
+    <link href="js/chosen/chosen.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <title>苏州市公共资源公共服务网</title>
+</head>
+<body>
+   <div class="adv-search" id="advpanel" style="height: 200px;">
+        <div class="container">
+            <div class="adv-wrap">
+                <div class="adv-left">
+                    <div class="adv-item"><span>包含以下全部关键词：</span><input type="text" placeholder="多个关键字以“空格”隔开" name="wd" class="adv-ipt"></div>
+                    <div class="adv-item hidden"><span>包含以下任意一个关键词：</span><input type="text" placeholder="多个关键字以“空格”隔开" name="inc_wd" class="adv-ipt"></div>
+                    <div class="adv-item hidden"><span>不包含以下关键词：</span><input type="text" placeholder="多个关键字以“空格”隔开" name="exc_wd" class="adv-ipt"></div>
+                    <div class="adv-item row">
+                        <span class="l">选择时间：</span>
+                        <div class="adv-time-block">
+                            <div class="adv-time-select">
+                                <input value="" type="radio" name="adv_time" checked="checked" id="adv_time_range0"><label for="adv_time_range0">不限时间</label>
+                                <input value="1" type="radio" name="adv_time" id="adv_time_range1"><label for="adv_time_range1">一天内</label>
+                                <input value="7" type="radio" name="adv_time" id="adv_time_range7"><label for="adv_time_range7">一周内</label>
+                                <input value="30" type="radio" name="adv_time" id="adv_time_range30"><label for="adv_time_range30">一月内</label>
+                                <input value="365" type="radio" name="adv_time" id="adv_time_range365"><label for="adv_time_range365">一年内</label>
+                            </div>
+                            <div class="adv-time-custom">
+                                <input type="radio" name="adv_time" id="adv_time_rangec" value="c"><label for="adv_time_rangec">自定义</label>
+                                <input type="text" class="time-txt datepicker">至<input type="text" class="time-txt datepicker">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adv-item"><span>索引分类：</span><select class="adv-select" name="idx_cgy"><option value="">不限索引</option></select></div>
+                    <!--<div class="adv-item last">
+                        <span>检索范围：</span><select class="adv-select" name="srch_cgy">
+                            <option value="0">全文检索</option>
+                            <option value="1">标题检索</option>
+                        </select>
+                    </div>-->
+                </div>
+
+                <div class="adv-right">
+                    <input type="button" class="search-btn" id="btn_advsearch" value="搜索"><span class="adv-switch switch02">高级搜索</span>
+                </div>
+            </div>
+            <span class="close" title="关闭"></span>
+        </div>
+
+    </div>
+    <div class="head" id="head">
+        <div class="container">
+            <div class="logo"></div>
+            <div class="search_block" id="searchbar">
+                <div class="search_inner">
+                    <input class="search_input param" autocomplete="off" name="wd" id="wd" type="text"><span class="search_delete"></span>
+                </div><input type="button" class="search-btn" id="btn_search" value="搜索">
+                <div class="search_drop">
+                    <ul class="search_history"></ul>
+                    <hr class="split">
+                    <ul class="search_suggest"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="condition-bar" id="conditionbar">
+        <div class="container">
+            <ul class="filter-list">
+                <li class="filter-item">
+                    <span class="filter-lbl dtlbl">不限时间</span>
+                    <div class="filter-panel">
+                        <input type="hidden" name="sdt" class="param"><input type="hidden" name="edt" class="param">
+                        <ul class="filter-drop" data-target="dt">
+                            <li class="active" data-val="">不限时间</li>
+                            <li data-val="1">一天内</li>
+                            <li data-val="7">一周内</li>
+                            <li data-val="30">一月内</li>
+                            <li data-val="365">一年内</li>
+                            <li class="time-custom">
+                                <span class="lbl">自定义</span><div>
+                                    <span>从</span><input type="text" class="time-txt datepicker">
+                                    <span>至</span><input type="text" class="time-txt datepicker">
+                                    <input type="button" value="确 认" class="btntime" id="btncustom">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--<li class="filter-item">
+                    <span class="filter-lbl cgylbl">全文检索</span>
+                    <div class="filter-panel">
+                        <input type="hidden" name="srch_cgy" class="param" />
+                        <span class="arrow"></span>
+                        <ul class="filter-drop" data-target="srch_cgy">
+                            <li class="active" data-val="0">全文检索</li>
+                            <li data-val="1">标题检索</li>
+                        </ul>
+                    </div>
+                </li>-->
+            </ul>
+            <span class="adv-switch switch01">高级搜索</span>
+        </div>
+        <div class="category">
+            <div class="container">
+                <input type="hidden" name="idx_cgy" class="param" value="">
+                <ul class="category-list" id="categorylist">
+                    <li class="active" data-val="1">全部</li>
+                </ul>
+                <div class="sort-wrap" id="sortbar">
+                    <input type="hidden" name="sort" value="" class="param">
+                    <span>排序：</span>
+                    <span class="sorttype relate active" data-sort="relate">相关程度</span>
+                    <span class="sorttype desc" data-sort="date" data-val="0">最新发布</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container result" id="content">
+        <div id="record" class="record"></div>
+        <div class="pager"></div>
+    </div>
+    <div id="loading" class="page-loading"></div>
+    <span class="gotop" id="gotop"></span>
+    <script type="text/x-mustache" id="historyTmpl">
+        {{#data}}
+        <li data-key="{{text}}"><p>{{{lable}}}</p><span class="remove" title="移除"></span></li>
+        {{/data}}
+    </script>
+    <script type="text/x-mustache" id="suggestTmpl">
+        {{#data}}
+        <li data-key="{{text}}"><p>{{{lable}}}</p></li>
+        {{/data}}
+    </script>
+    <script type="text/x-mustache" id="recordTmpl">
+        <p class="result-summary">为您找到相关结果约{{totalcount}}个，耗时{{executetime}}秒</p>
+        <ul class="search-grid">
+            {{#records}}
+            <li class="search-row">
+                <h2 class="title"><a href="{{linkurl}}" target="_blank">{{{title}}}</a></h2>
+                <p class="content">{{{content}}}</p>
+                <p class="content-src"><span>{{categoryname}} </span>
+				<span class="content-date">{{webdate}}</span></p>
+            </li>
+            {{/records}}
+        </ul>
+    </script>
+    <script type="text/x-mustache" id="norecordTmpl">
+        <div class="norecord">
+            <p class="tip">抱歉，没有找到相关结果。建议：</p>
+            <p>1.请您检查输入是否错误</p>
+            <p>2.请您尝试简化输入词</p>
+            <p>3.请您尝试用相似词或常见词</p>
+        </div>
+    </script>
+    <script>
+        //配置地址
+        var global = {
+            gethotwordurl: "http://218.4.45.172:8152/inteligentsearch/rest/inteligentSearch/getHotWords",
+            getfulltextdataurl: "http://218.4.45.172:8152/inteligentsearch/rest/inteligentSearch/getFullTextData",
+			//heatStatisticsurl:"http://localhost:8080/inteligentsearch/rest/inteligentSearch/heatStatistics",
+			//customcategorys: ["001"]   //自定义分类
+        }
+    </script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/json3.min.js"></script>
+    <script src="js/pagination/mricode.pagination.js"></script>
+    <script src="js/chosen/chosen.jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mustache.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/fullsearch.js"></script>
+	<script src="js/jquery.xdomainrequest.min.js"></script>
+	<!--<script src="js/layer/layer.js"></script>-->
+</body>
+</html>

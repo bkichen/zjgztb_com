@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><script type="text/javascript" src="/js/kb.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="fzx/js/lib/chosen/chosen.css">
+    <link rel="stylesheet" href="css/Common.css">
+    <link rel="stylesheet" href="css/subcommon.css">
+    <link rel="stylesheet" href="css/pageCommon.css">
+    <link rel="stylesheet" href="css/todaySales.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/pagination/mricode.pagination.css">
+    <script src="fzx/js/lib/jquery.min.js"></script>
+    <script src="js/ServiceUtil.js"></script>
+    <script src="js/lib/pagination/mricode.pagination.js"></script>
+    <title>张家港市公共资源交易信息网-江苏信息网</title>
+    <script type="text/javascript" src="js/webBuilderCommon.js"></script>
+    <script type="text/javascript" src="js/pageView.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="ewb-trade-mid">
+        <div class="ewb-page-wrap">
+            <div class="ewb-loc">
+                <span>当前位置：</span>
+                <a href="index.html">首页</a>
+                <span class="ewb-loc-span">&gt;</span>
+                <span class="cur">今日交易</span>
+            </div>
+            <div class="ewb-page-main ewb-h698" style="min-height: 455px;">
+                <div class="sub-container clearfix">
+                    <div class="tab-view" id="xztype">
+                        <div class="ewb-sales-hd" data-role="head">
+                            <ul class="clearfix">
+                                <li class="ewb-sales-item cur" data-role="tab" data-target="a"><a href="javascript:void(0);">招标公告</a></li>
+                                <li class="ewb-sales-item" data-role="tab" data-target="b"><a href="javascript:void(0);">中标公告</a></li>
+                                <li class="ewb-sales-item" data-role="tab" data-target="c"><a href="javascript:void(0);">工程开标</a></li>
+                                <li class="ewb-sales-item" data-role="tab" data-target="d"><a href="javascript:void(0);">采购开标</a></li>
+                            </ul>
+                        </div>
+                        <div data-role="body">
+                            <div data-role="tab-content" data-id="a" class="ewb-sales-panel" id="content1">
+                                <div class="ewb-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td class="ewb-wt70">
+                                                    序
+                                                </td>
+                                                <td class="ewb-wt106">
+                                                    交易分类
+                                                </td>
+                                                <td class="ewb-wt695">
+                                                    公告名称
+                                                </td>
+                                                <td>
+                                                    公告时间
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="gglist">
+
+
+                                        </tbody>
+                                    </table>
+                                    <div style="text-align:center;margin-top:20px;">
+                                        <div class="pager1" style="display:inline-block;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-role="tab-content" data-id="b" class="ewb-sales-panel hidden" id="content2">
+                                <div class="ewb-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td class="ewb-wt70">
+                                                    序
+                                                </td>
+                                                <td class="ewb-wt106">
+                                                    交易分类
+                                                </td>
+                                                <td class="ewb-wt695">
+                                                    公示名称
+                                                </td>
+                                                <td>
+                                                    公示时间
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="gslist">
+
+                                        </tbody>
+                                    </table>
+                                    <div style="text-align:center;margin-top:20px;">
+                                        <div class="pager2" style="display:inline-block;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-role="tab-content" data-id="c" class="ewb-sales-panel hidden" id="content3">
+                                <div style="margin-bottom: 20px;text-align: center;">
+                                	自9月7日起，由于开标室改造，原定于第七开标室、第九开标室的项目将更换开标室，具体请看原开标室门上提示或咨询69820870，谢谢！
+                                </div>
+								<div class="ewb-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td class="ewb-wt70">
+                                                    序
+                                                </td>
+                                                <td class="ewb-wt106">
+                                                    交易分类
+                                                </td>
+                                                <td class="ewb-wt260">
+                                                    标段名称
+                                                </td>
+                                                <!--<td class="ewb-wt260">
+				        						标段编号
+				        					</td>-->
+                                                <td>
+                                                    开标时间
+                                                </td>
+                                                <td class="ewb-wt260">
+                                                    开标室
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="kblist">
+
+                                        </tbody>
+                                    </table>
+                                    <div style="text-align:center;margin-top:20px;">
+                                        <div class="pager3" style="display:inline-block;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-role="tab-content" data-id="d" class="ewb-sales-panel hidden" id="content4">
+                                <div class="ewb-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td class="ewb-wt70">
+                                                    序
+                                                </td>
+                                                <td class="ewb-wt106">
+                                                    交易分类
+                                                </td>
+                                                <td class="ewb-wt500">
+                                                    标段名称
+                                                </td>
+                                                <!--<td class="ewb-wt260">
+				        						标段编号
+				        					</td>-->
+                                                <td>
+                                                    开标时间
+                                                </td>
+                                                <td class="ewb-wt260">
+                                                    开标室
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="pblist">
+
+                                        </tbody>
+                                    </table>
+                                    <div style="text-align:center;margin-top:20px;">
+                                        <div class="pager4" style="display:inline-block;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script type="text/x-template" id="gglist-tmpl">
+        {{#WZInfoRowLst}}
+        <tr>
+            <td>
+                {{xuhao}}
+            </td>
+            <td>
+                {{ProjectType}}
+            </td>
+            <td>
+                <div class="ewb-table-tt2">
+                    <a href="/todaySalesDetail.html?infoid={{InfoID}}&type=1" title="{{ShowTitle}}">{{ShowTitle}}</a>
+                </div>
+            </td>
+            <td>
+                <span class="dates">{{ShowDate}}</span>
+            </td>
+        </tr>
+        {{/WZInfoRowLst}}
+    </script>
+    <script type="text/x-template" id="gslist-tmpl">
+        {{#WZInfoRowLst}}
+        <tr>
+            <td>
+                {{xuhao}}
+            </td>
+            <td>
+                {{ProjectType}}
+            </td>
+            <td>
+                <div class="ewb-table-tt2">
+                    <a href="/todaySalesDetail.html?infoid={{InfoID}}&type=2" title="{{ShowTitle}}">{{ShowTitle}}</a>
+                </div>
+            </td>
+            <td>
+                <span class="dates">{{ShowDate}}</span>
+            </td>
+        </tr>
+        {{/WZInfoRowLst}}
+    </script>
+    <script type="text/x-template" id="kblist-tmpl">
+        {{#WZInfoRowLst}}
+        <tr>
+            <td>
+                {{xuhao}}
+            </td>
+            <td>
+                {{ProjectType}}
+            </td>
+            <td>
+                <div class="ewb-table-tt3" title="{{ShowTitle}}">
+                    {{ShowTitle}}
+                </div>
+            </td>
+            <!--<td>
+					{{{BiaoDuanNo}}}
+				</td>-->
+            <td>
+                <span class="dates">{{ShowDate}}</span>
+            </td>
+            <td>
+                {{ShowKaiBiaoRoom}}
+            </td>
+        </tr>
+        {{/WZInfoRowLst}}
+    </script>
+    <script type="text/x-template" id="pblist-tmpl">
+        {{#WZInfoRowLst}}
+        <tr>
+            <td>
+                {{xuhao}}
+            </td>
+            <td>
+                {{ProjectType}}
+            </td>
+            <td>
+                <div class="ewb-table-tt4" title="{{ShowTitle}}">
+                    {{{ShowTitle}}}
+                </div>
+            </td>
+            <!--<td>
+					{{{BiaoDuanNo}}}
+				</td>-->
+            <td>
+                <span class="dates">{{ShowDate}}</span>
+            </td>
+            <td>
+                {{ShowKaiBiaoRoom}}
+            </td>
+        </tr>
+        {{/WZInfoRowLst}}
+    </script>
+    <script src="search/js/mustache.js"></script>
+    <script src="fzx/js/lib/chosen/chosen.min.js"></script>
+    <script src="fzx/js/lib/laydate/laydate.js"></script>
+    <script src="fzx/js/lib/placeholder.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="fzx/js/lib/jquery.SuperSlide.js"></script>
+    <script src="js/lib/tabview.js"></script>
+    <script src="js/todaySales.js"></script>
+</body>
+
+</html>

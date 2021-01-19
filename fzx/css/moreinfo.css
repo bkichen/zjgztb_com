@@ -1,0 +1,367 @@
+/**!
+ * 江苏省公共资源交易网
+ * author: wuzhou;
+ */
+
+.ewb-trade-mid {
+    height: 772px;
+    background: url(http://www.szzyjy.com.cn:8086/fzx/images/trade_bg.jpg) center top no-repeat #f2f2f2;
+}
+
+.ewb-h698 {
+    height: 725px;
+}
+
+.ewb-trade-left {
+    min-height: 658px;
+    background-color: #ecf6ff;
+}
+
+.ewb-trade-tt {
+    width: 256px;
+    height: 55px;
+    font-size: 22px;
+	font-weight:bold;
+    margin-left: -7px;
+    color: #fff;
+    text-align: center;
+    line-height: 49px;
+    background: url(../images/trade_tt_bg.png) center top no-repeat #e6f4ff;
+}
+
+
+/* 左侧菜单 */
+
+.wb-tree-items,
+.wb-tree-item {
+    cursor: pointer;
+}
+
+.wb-tree-tt {
+    color: #333;
+    display:block;
+}
+
+.wb-tree-node {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #333;
+    padding-left: 25px;
+    background-color: #ecf6ff;
+}
+
+.wb-tree-iconr {
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-top: 16px;
+    margin-right: 15px;
+    background: url(../images/wblistr.png) no-repeat;
+}
+
+.wb-tree-sub {
+    display: none;
+    background-color: #d0efff;
+    padding-top: 10px;
+}
+
+.wb-tree-item {
+    min-height: 40px;
+    vertical-align: top;
+    line-height: 40px;
+}
+
+.wb-tree-item>a {
+    width: 222px;
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-indent: 50px;
+    margin-left: 10px;
+    background: url(../images/trade_ico.png) 39px center no-repeat;
+}
+
+.wb-tree-item>a:hover {
+    font-weight: bold;
+    color: #fff;
+    background: url(../images/trade_ico_hover.png) left center no-repeat;
+}
+
+.current .wb-tree-tt {
+    color: #fff;
+    display:block;
+}
+
+.current .wb-tree-node {
+    color: #fff;
+    font-weight: bold;
+    background-color: #5cc5fb;
+}
+
+.current .wb-tree-iconr {
+    width: 16px;
+    height: 16px;
+    background: url(../images/wblistrh.png) no-repeat;
+}
+
+.current .wb-tree-sub {
+    display: block;
+}
+
+
+/* 地区选择 */
+
+.ewb-area-tt {
+    padding-top: 10px;
+    height: 40px;
+    border-top: 2px solid #52b0ff;
+    background-color: #f7f7f7;
+}
+
+.ewb-area-left {
+    line-height: 48px;
+    text-align: right;
+    width: 62px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ewb-area-right {
+    width: 666px;
+}
+
+.ewb-area-ritems {
+    padding-top: 11px;
+}
+
+.ewb-area-ritems>li {
+    width: 72px;
+    height: 26px;
+    line-height: 26px;
+    float: left;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+.ewb-area-ritems>li>a {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.ewb-area-ritems>li>a:hover,
+.ewb-area-ritems>li.cur>a {
+    color: #fff;
+    font-weight: bold;
+    background-color: #ffae00;
+}
+
+
+/* 搜索 */
+
+.ewb-trade-search {
+    margin: 0 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #cbcbcb;
+}
+
+.ewb-stxt {
+    line-height: 30px;
+}
+
+.ewb-law-input {
+    display: block;
+    border: 1px solid #e1e1e1;
+    height: 28px;
+    outline: none;
+    line-height: 28px;
+    margin-right: 10px;
+}
+
+.ewb-trade-sel {
+    display: block;
+    width: 72px;
+    height: 30px;
+    border: 1px solid #e1e1e1;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    outline: none;
+}
+
+.ewb-sbtn {
+    display: block;
+    width: 52px;
+    height: 30px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    background: url(../images/s_wico.png) center no-repeat #ffae00;
+    margin-right: 20px;
+}
+
+.ewb-sbtn:hover {
+    background-color: #f60;
+}
+
+.ewb-ml30 {
+    margin-left: 30px;
+}
+
+.ewb-ml5 {
+    margin-left: 5px;
+}
+
+.ewb-trade-tb {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 20px;
+}
+
+.ewb-w44 {
+    width: 44px;
+}
+
+.ewb-w133 {
+    width: 133px;
+}
+
+.ewb-w108 {
+    width: 108px;
+}
+
+.ewb-trade-th {
+    background-color: #5cc5fb;
+    height: 36px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ewb-trade-pro {
+    text-align: left;
+    text-indent: 20px;
+}
+
+.ewb-trade-td {
+    font-size: 14px;
+    height: 41px;
+    border-bottom: 1px dashed #d8d8d8;
+    text-align: center;
+    vertical-align: top;
+    line-height: 41px;
+}
+
+.ewb-trade-td>a {
+    display: block;
+    color: #333;
+    text-align: left;
+    margin-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ewb-trade-tr:hover {
+    background-color: #fff3e4;
+}
+
+
+/* 页码 */
+
+.ewb-page-items {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.ewb-page-li {
+    float: left;
+    margin-left: 4px;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+
+.ewb-page-li>a {
+    display: block;
+}
+
+.ewb-page-li.ml6 {
+    margin-left: 6px;
+}
+
+.ewb-page-li.ml20 {
+    margin-left: 20px;
+}
+
+.ewb-page-item {
+    width: 34px;
+    height: 24px;
+    border: 1px solid #dfdfdf;
+    line-height: 24px;
+    color: #666;
+}
+
+.ewb-page-item:hover {
+    border: 1px solid #ff600e;
+}
+
+.ewb-page-item.current {
+    width: 36px;
+    height: 26px;
+    line-height: 26px;
+    border: 0;
+    color: #ff600e;
+    font-weight: bold;
+}
+
+.ewb-page-default {
+    width: 36px;
+    height: 26px;
+    line-height: 26px;
+    color: #666;
+}
+
+.ewb-page-omit {
+    width: auto;
+    padding: 0 18px 0 18px;
+}
+
+.ewb-page-family {
+    font-family: "SimSun";
+}
+
+.ewb-page-fs12 {
+    font-size: 12px;
+}
+
+.ewb-page-number {
+    width: auto;
+    padding: 0 6px 0 6px;
+    font-weight: bold;
+}
+
+.ewb-page-to {
+    width: auto;
+}
+
+.ewb-page-next {
+    width: 58px;
+}
+
+.ewb-page-next:hover {
+    background-color: #999999;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #999;
+}
+
+.ewb-page-go {
+    width: 28px;
+}

@@ -1,0 +1,196 @@
+/**!
+ * 景德镇-文章页
+ * author: wangkai;
+ */
+.con{
+	font-size:14px;
+}
+.article {
+	padding: 33px 30px 20px 30px;
+	border: 1px solid #e7e7e7;
+	overflow: auto;
+	min-height:600px;
+}
+
+.article-info h1 {
+	/* height: 42px; */
+	line-height: 42px;
+	text-align: center;
+	font-family: 'Microsoft YaHei';
+    font-size: 28px;
+    color: #000;
+}
+
+.info-sources {
+	margin-top: 10px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	color: #999;
+}
+
+.info-sources a {
+	color: black;
+}
+
+.article-content {
+	margin-top: 31px;
+}
+
+.article-content p {
+	text-indent: 2em;
+	line-height: 30px;
+	font-size: 14px;
+	color: #333;
+}
+
+.mt14 {
+	margin-top: 14px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+.article-content img {
+	display: block;
+	width: 701px;
+	height: 526px;
+	margin-top: 37px;
+	margin-bottom: 31px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.user-comments {
+	margin-top: 42px;
+}
+
+.user-comments-hd {
+	height: 42px;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.user-comments-hd a {
+	display: block;
+	padding-left: 10px;
+	width: 100px;
+	height: 41px;
+	line-height: 41px;
+	border-bottom: 2px solid #1a3490;
+	font-family: "Microsoft YaHei";
+	font-size: 18px;
+	color: #333;
+}
+
+.nickname {
+	margin-top: 16px;
+	height: 28px;
+	line-height: 28px;
+	color: #333;
+}
+
+.nickname-txt {
+	float: left;
+	margin-left: 5px;
+	width: 148px;
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #e0e0e0;
+	margin-right: 10px;
+}
+
+.nickname span {
+	float: left;
+}
+
+.anonymous-txt {
+	float: left;
+	margin-top: 8px;
+	width: 13px;
+	height: 13px;
+	margin-left: 20px;
+	margin-right: 8px;
+}
+
+.nickname .nickname-ts {
+	color: #b2b0b0;
+}
+
+.comments-txt {
+	display: block;
+	margin-top: 10px;
+	width: 100%;
+	height: 100px;
+	border: 1px solid #e7e7e7;
+	resize: none;
+	font-size: 14px;
+	line-height: 16px;
+	color: #b2b0b0;
+	text-indent: 10px;
+	padding-top: 8px;
+}
+
+.yz-code {
+	margin-top: 10px;
+}
+
+.yz-code img {
+	float: left;
+	margin-left: 10px;
+	width: 70px;
+	height: 28px;
+}
+
+.yz-code a {
+	float: left;
+	margin-left: 10px;
+	color: #0033e5;
+	text-decoration:underline;
+}
+
+.tj-comments {
+	display: block;
+	margin-top: 15px;
+	width: 110px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	background-color: #1480c5;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	border: 0;
+	cursor: pointer;
+}
+
+.tj-comments:hover {
+	background-color: #3ea6eb;
+}
+
+.comments-list {
+	margin-top: 10px;
+}
+
+.comments-list li {
+	padding: 14px 0px;
+	vertical-align: top;
+	border-bottom: 1px dashed #e7e7e7;
+}
+
+.comments-list span {
+	display: block;
+	line-height: 24px;
+	color: #b2b0b0;
+}
+
+.comments-list a {
+	margin-right: 13px;
+	color: #0686d7;
+}
+
+.comments-list p {
+	line-height: 26px;
+	font-size: 14px;
+	color: #333;
+}

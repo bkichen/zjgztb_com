@@ -1,0 +1,36 @@
+.jhtable {
+    font-family: SimSun;
+    font-size: 9pt;
+    color: #000;
+    text-align: center;
+    line-height: 24px;
+    border-left: 1px solid #7bbfea;
+    border-top: 1px solid #7bbfea;
+    margin: 10px auto;
+    width: 998px;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.jhtable td {
+    border-right: 1px solid #7bbfea;
+    border-bottom: 1px solid #7bbfea;
+}
+
+.jhtable table{
+	margin:5px auto;
+	border-left:1px solid #7bbfea;
+	border-top:1px solid #7bbfea;
+	}
+
+
+
+
+.bq {
+    font-weight: bold;
+    line-height: 30px;
+}

@@ -1,0 +1,403 @@
+
+
+/**!
+ * 首页
+ * author: gaojian; 
+ * date: 2019-06-30
+ */
+
+
+/* main */
+
+.ewb-floor {
+    margin-left: -24px;
+}
+
+
+/* 公共标题样式 */
+
+.ewb-cm-hd {
+    height: 61px;
+    text-align: center;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.ewb-cm-tt {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    height: 60px;
+    border-bottom: 2px solid #548dd7;
+}
+
+.ewb-cm-tt img {
+    vertical-align: top;
+    height: 60px;
+}
+
+
+/* 图片轮播 */
+
+.slideBox {
+    position: relative;
+    overflow: hidden;
+    margin: 0 20px 0 204px;
+    height: 448px;
+}
+
+.slideBox-hd {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 15px;
+    z-index: 1;
+    overflow: hidden;
+    height: 10px;
+}
+
+.slideBox-hd ul {
+    width: 100%;
+    overflow: hidden;
+    zoom: 1;
+    text-align: center;
+    font-size: 0;
+    -webkit-text-size-adjust: none;
+}
+
+.slideBox-hd ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    margin: 0 6px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background: url('../images/stag.png') no-repeat;
+}
+
+.slideBox-hd ul li.on {
+    width: 29px;
+    background-image: url('../images/stag_cur.png');
+}
+
+.slideBox-bd {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+}
+
+.slideBox-bd li {
+    position: relative;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.slideBox-bd img {
+    display: block;
+    width: 100%;
+    height: 448px;
+}
+
+
+/* 今日交易 */
+
+.ewb-trade {
+    height: 116px;
+    margin-top: 40px;
+    padding-bottom: 27px;
+}
+
+.ewb-trade-node {
+    float: left;
+    margin-left: 155px;
+    padding: 0 7px;
+    width: 169px;
+    height: 116px;
+    vertical-align: top;
+    background-repeat: no-repeat;
+}
+
+.ewb-trade-node:first-child {
+    margin-left: 0;
+}
+
+.ewb-trade-node:last-child {
+    float: left;
+}
+
+.ewb-trade-node.icon1 {
+    background: url('../images/trade_bg1.png');
+}
+
+.ewb-trade-node.icon2 {
+    background: url('../images/trade_bg2.png');
+}
+
+.ewb-trade-node.icon3 {
+    background: url('../images/trade_bg3.png');
+}
+
+.ewb-trade-node.icon4 {
+    background: url('../images/trade_bg4.png');
+}
+
+.ewb-trade-hd {
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ewb-trade-node.icon1 .ewb-trade-hd {
+    border-bottom: 1px solid #2777e3;
+}
+
+.ewb-trade-node.icon2 .ewb-trade-hd {
+    border-bottom: 1px solid #ed6947;
+}
+
+.ewb-trade-node.icon3 .ewb-trade-hd {
+    border-bottom: 1px solid #15acb2;
+}
+
+.ewb-trade-node.icon4 .ewb-trade-hd {
+    border-bottom: 1px solid #52bd22;
+}
+
+.ewb-trade-bd {
+    padding-top: 17px;
+    height: 34px;
+    text-align: center;
+}
+
+.ewb-trade-bd span {
+    /* float: left;*/
+    margin: 12px 0 0 8px;
+    height: 22px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.ewb-trade-bd span:first-child {
+    margin-top: 0;
+    height: 34px;
+    line-height: 34px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* 交易服务 */
+
+.ewb-service {
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.ewb-service ul {
+    margin: -20px -150px 39px 0;
+}
+
+.ewb-service-node {
+    float: left;
+    margin: 20px 125px 25px 70px;
+    width: 160px;
+    height: 162px;
+    vertical-align: top;
+}
+
+.ewb-service-item {
+    display: block;
+    height: 162px;
+}
+
+.ewb-service-name {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.ewb-service-icon {
+    width: 160px;
+    height: 160px;
+    border-radius: 26px;
+    vertical-align: top;
+}
+
+.ewb-service-item:hover .ewb-service-icon {
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.3);
+}
+
+.ewb-service-item:hover .ewb-service-name {
+    color: #1a78cc;
+}
+
+
+/* 通知公告   工作动态  */
+
+.ewb-notice {
+    height: 349px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+.ewb-notice-hd {
+    height: 33px;
+    padding: 10px 0 0 25px;
+}
+
+.ewb-notice-bd {
+    height: 306px;
+    overflow: hidden;
+}
+
+.ewb-notice-item {
+    padding-bottom: 3px;
+    margin-right: 18px;
+}
+
+.ewb-notice-item a {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.ewb-notice-item.on {
+    background: url('../fzx/images/tab_ico.png') center bottom no-repeat;
+}
+
+.ewb-notice-item.on a {
+    color: #1a78cc;
+    border-bottom: 2px solid #1a78cc;
+}
+
+.ewb-more {
+    height: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+    color: #666;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.ewb-data-item {
+    padding-left: 15px;
+    padding-top: 4px;
+}
+
+.ewb-data-list {
+    line-height: 32px;
+    padding-left: 14px;
+    background: url('../fzx/images/dian.png') 0 50% no-repeat;
+}
+
+.ewb-data-infor {
+    margin-right: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ewb-data-infor-new {
+    margin-right: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+    max-width: 200px;
+}
+
+.ewb-data-infor a {
+    color: #333;
+}
+
+.ewb-data-infor-new a {
+    color: #333;
+}
+
+.ewb-data-date {
+    float: right;
+    padding-right: 15px;
+    margin-top: -32px;
+}
+
+.ewb-data-list:hover {
+    background: url('../fzx/images/dian_cur.png') 0 50% no-repeat;
+}
+
+.ewb-data-list:hover,
+.ewb-data-list:hover a {
+    cursor: pointer;
+    color: #ff9600;
+}
+
+.ewb-banner {
+    position: relative;
+    margin-top: 20px;
+    height: 79px;
+    overflow: hidden;
+}
+
+.ewb-banner-list a {
+    height: 79px;
+    width: 288px;
+}
+
+.ewb-banner-list a img {
+    display: block;
+    width: 288px;
+    height: 79px;
+}
+
+.ewb-banner .prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    width: 12px;
+    height: 30px;
+    background: url('../images/prev_ico1.png') no-repeat;
+}
+
+.ewb-banner .next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+    width: 12px;
+    height: 30px;
+    background: url('../images/next_ico1.png') no-repeat;
+}
+
+
+/* 修改 */
+
+.ewb-trade-node {
+    width: 183px;
+    padding: 0;
+}
+
+.ewb-trade-node>a {
+    display: block;
+    padding: 0 7px;
+    height: 100%;
+}
+
+.ewb-service ul {
+    margin: -20px -240px 39px 0;
+}
+
+.ewb-service-node {
+    margin: 20px 186px 25px 0;
+}

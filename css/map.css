@@ -1,0 +1,170 @@
+
+
+/**!
+ * 首页
+ * author: gaojian;
+ * date: 2019-07-01 
+ */
+
+body {
+    background: url('../images/map_bg.jpg') center top no-repeat;
+}
+
+.ewb-title {
+    height: 69px;
+    padding-top: 63px;
+}
+
+.ewb-title img {
+    display: block;
+    width: 628px;
+    height: 46px;
+    margin: 0 auto;
+}
+
+.ewb-main {
+    height: 1002px;
+}
+
+.ewb-sele {
+    width: 123px;
+    padding: 75px 0 0 30px;
+}
+
+.ewb-data-select {
+    width: 100%;
+    /*    select的宽度需在这里设置       */
+}
+
+/* 设置自己所需要的select样式 */
+/* id #year_chosen是chosen插件根据页面原生select的id自动添加的 */
+
+.chosen-container .chosen-results {
+    max-height: 480px;
+}
+
+.ewb-data-select .chosen-single {
+    height: 36px;
+    line-height: 37px;
+    border: 1px solid #0de5ff;
+    background-color: #1b5ea8;
+    color: #fff;
+
+}
+
+.ewb-data-select .chosen-drop {
+    border: 0;
+    background: #2f64a3;
+    color: #fff;
+    margin: 1px;
+}
+
+.chosen-container .chosen-results {
+    color: #fff;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+    border: 1px solid #0de5ff;
+}
+
+.chosen-container-single .chosen-single div b {
+    width: 28px;
+    height: 32px;
+    background: url('../images/carr1.png') left center no-repeat;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+    background: url('../images/carr2.png') left center no-repeat;
+}
+
+.ewb-map {
+    position: relative;
+    width: 627px;
+    height: 819px;
+    margin-top: 73px;
+}
+
+.ewb-info {
+    position: relative;
+    width: 314px;
+    height: 694px;
+    margin-top: 75px;
+    padding: 7px 1px 13px 1px;
+    background: url('../images/info_bg.png') no-repeat;
+}
+
+.ewb-info-label {
+    position: absolute;
+    top: 53px;
+    left: -2px;
+    width: 7px;
+    height: 146px;
+    background: url('../images/info_icon.png') no-repeat;
+}
+
+.ewb-info-box1 {
+    width: 40%;
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.ewb-info-box2 {
+    width: 60%;
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.ewb-info-hd span {
+    height: 54px;
+    line-height: 54px;
+    font-weight: bold;
+    color: #00fcff;
+}
+
+.ewb-info-bd li.even {
+    background: #106fc1;
+}
+
+.ewb-area-name {
+    position: absolute;
+    font-size: 16px;
+    color: #333;
+}
+
+#zjg {
+    top: 75px;
+    left: 285px;
+}
+
+#cs {
+    left: 370px;
+    top: 199px;
+}
+
+#tc {
+    left: 512px;
+    top: 260px;
+}
+
+#ks {
+    left: 439px;
+    top: 381px;
+}
+#gyyq{
+    left: 339px;
+    top: 445px;
+}
+#sz{
+    left: 178px;
+    top: 438px;
+}
+#wj{
+    left: 279px;
+    top: 567px;
+}
